@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sankeertan/static/css/main.2d5f0b98.css",
-    "main.js": "/sankeertan/static/js/main.9682c87f.js",
+    "main.css": "/sankeertan/static/css/main.085cc935.css",
+    "main.js": "/sankeertan/static/js/main.0c065425.js",
     "static/js/198.942e1968.chunk.js": "/sankeertan/static/js/198.942e1968.chunk.js",
     "static/js/453.861f884b.chunk.js": "/sankeertan/static/js/453.861f884b.chunk.js",
     "index.html": "/sankeertan/index.html",
-    "main.2d5f0b98.css.map": "/sankeertan/static/css/main.2d5f0b98.css.map",
-    "main.9682c87f.js.map": "/sankeertan/static/js/main.9682c87f.js.map",
+    "main.085cc935.css.map": "/sankeertan/static/css/main.085cc935.css.map",
+    "main.0c065425.js.map": "/sankeertan/static/js/main.0c065425.js.map",
     "198.942e1968.chunk.js.map": "/sankeertan/static/js/198.942e1968.chunk.js.map",
     "453.861f884b.chunk.js.map": "/sankeertan/static/js/453.861f884b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d5f0b98.css",
-    "static/js/main.9682c87f.js"
+    "static/css/main.085cc935.css",
+    "static/js/main.0c065425.js"
   ]
 }
