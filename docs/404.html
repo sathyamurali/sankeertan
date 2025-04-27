@@ -22,12 +22,9 @@
       }
     } else {
         var target = l.pathname.replace(/\\/g, '/');
-        if (target.startsWith('/sankeertan/')) {
-           target = target.substring('/sankeertan/'.length);
-        }
+        target = target.replace(/^\/sankeertan\//, ''); // Remove base path
        window.history.replaceState(null, null, '/sankeertan/' + target);
     }
-	 
   }(window.location));
 </script>
 </head>
