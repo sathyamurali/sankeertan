@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/sankeertan/static/css/main.47f6f80b.css",
-    "main.js": "/sankeertan/static/js/main.3cd01f6b.js",
+    "main.js": "/sankeertan/static/js/main.b78db543.js",
     "static/js/198.942e1968.chunk.js": "/sankeertan/static/js/198.942e1968.chunk.js",
     "static/js/453.861f884b.chunk.js": "/sankeertan/static/js/453.861f884b.chunk.js",
     "index.html": "/sankeertan/index.html",
     "main.47f6f80b.css.map": "/sankeertan/static/css/main.47f6f80b.css.map",
-    "main.3cd01f6b.js.map": "/sankeertan/static/js/main.3cd01f6b.js.map",
+    "main.b78db543.js.map": "/sankeertan/static/js/main.b78db543.js.map",
     "198.942e1968.chunk.js.map": "/sankeertan/static/js/198.942e1968.chunk.js.map",
     "453.861f884b.chunk.js.map": "/sankeertan/static/js/453.861f884b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47f6f80b.css",
-    "static/js/main.3cd01f6b.js"
+    "static/js/main.b78db543.js"
   ]
 }
