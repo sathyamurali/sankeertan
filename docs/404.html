@@ -1,33 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Redirecting...</title>
-<script type="text/javascript">
-  // Single Page Apps for GitHub Pages
-  // MIT License
-  // https://github.com/rafgraph/spa-github-pages
-  (function(l) {
-    if (l.search) {
-      var q = {};
-      l.search.slice(1).split('&').forEach(function(v) {
-        var a = v.split('=');
-        q[a[0]] = a.slice(1).join('=').replace(/~1/g, '!')
-                                       .replace(/~0/g, '/');
-      });
-      if (q.p !== undefined) {
-        var target = l.pathname.replace(/\\/g, '/');
-        target = target.replace(/^\/sankeertan\//, ''); // Remove base path from target
-        window.history.replaceState(null, null, '/sankeertan/' + target);
-      }
-    } else {
-        var target = l.pathname.replace(/\\/g, '/');
-        target = target.replace(/^\/sankeertan\//, ''); // Remove base path
-       window.history.replaceState(null, null, '/sankeertan/' + target);
-    }
-  }(window.location));
-</script>
-</head>
-<body style="display:none">
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Get the full URL path, including the base path
+      const path = window.location.pathname;
+
+      // Construct the new URL using the hash (#)
+      // This will be the base of your repository + a hash + the original path
+      const redirectUrl = '/sankeertan/#' + path;
+
+      // Redirect the user to the new URL
+      window.location.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting to the correct page...</h1>
+  </body>
 </html>
