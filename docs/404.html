@@ -3,31 +3,22 @@
 <head>
 <meta charset="utf-8">
 <title>Redirecting...</title>
-<script type="text/javascript">
-  // Single Page Apps for GitHub Pages
-  // MIT License
-  // https://github.com/rafgraph/spa-github-pages
-  (function(l) {
-    if (l.search) {
-      var q = {};
-      l.search.slice(1).split('&').forEach(function(v) {
-        var a = v.split('=');
-        q[a[0]] = a.slice(1).join('=').replace(/~1/g, '!')
-                                       .replace(/~0/g, '/');
-      });
-      if (q.p !== undefined) {
-        var target = l.pathname.replace(/\\/g, '/');
-        target = target.replace(/^\/sankeertan\//, ''); // Remove base path from target
-        window.history.replaceState(null, null, '/sankeertan/' + target);
-      }
-    } else {
-        var target = l.pathname.replace(/\\/g, '/');
-        target = target.replace(/^\/sankeertan\//, ''); // Remove base path
-       window.history.replaceState(null, null, '/sankeertan/' + target);
-    }
-  }(window.location));
+<script>
+// Get the path from the URL and redirect to index.html with that path 
+const path = window.location.pathname; 
+const search = window.location.search; 
+const hash = window.location.hash; 
+// For repository sites (project sites), the path includes the repo name 
+const repoName = 'sankeertan'; 
+
+// Replace with your repo name 
+const basePath = window.location.hostname === 'localhost' ? '' : `/${repoName}`; 
+window.location.href = `${basePath}/index.html?path=${encodeURIComponent(path + search + hash)}`; 
 </script>
+<noscript>
+<meta http-equiv="refresh" content="0; url=/sankeertan/" />
+</noscript>
 </head>
-<body style="display:none">
+<body> <p>Redirecting... If you are not redirected, <a href="/sankeertan/">click here</a>.</p> 
 </body>
 </html>
