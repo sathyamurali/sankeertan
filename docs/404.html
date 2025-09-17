@@ -11,9 +11,23 @@ const hash = window.location.hash;
 // For repository sites (project sites), the path includes the repo name 
 const repoName = 'sankeertan'; 
 
-// Replace with your repo name 
-const basePath = window.location.hostname === 'localhost' ? '' : `/${repoName}`; 
-window.location.href = `${basePath}/index.html?path=${encodeURIComponent(path + search + hash)}`; 
+if (path === '/' || path === '/sankeertan/') {
+    window.location.href = '/sankeertan/index.html';
+} else {
+    // Remove the repo name from the path if it's duplicated
+    if (path.startsWith('/' + repoName + '/' + repoName)) {
+        path = path.substring(repoName.length + 1);
+    }
+
+    // Remove the repo name from the start of the path
+    if (path.startsWith('/' + repoName)) {
+        path = path.substring(repoName.length);
+    }
+
+    // Redirect to index.html with the correct path
+    window.location.href = '/sankeertan/index.html?path=' + encodeURIComponent(path);
+}
+
 </script>
 <noscript>
 <meta http-equiv="refresh" content="0; url=/sankeertan/" />
@@ -22,3 +36,4 @@ window.location.href = `${basePath}/index.html?path=${encodeURIComponent(path + 
 <body> <p>Redirecting... If you are not redirected, <a href="/sankeertan/">click here</a>.</p> 
 </body>
 </html>
+
